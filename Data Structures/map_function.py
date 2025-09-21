@@ -25,3 +25,10 @@ print(price)
 celcius = [10,2,3,4]
 fahrenheit = list(map(lambda c :  c * 9/5 + 32,celcius))
 print(fahrenheit)
+
+#Problem -3
+#Extract emails from user data
+
+users = [("khadija", "khadija@example.com"), ("Bob", "bob@example.com")]
+emails = list(map(lambda item :item[1],users))
+print(emails)

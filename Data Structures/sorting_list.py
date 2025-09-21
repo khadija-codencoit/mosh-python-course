@@ -13,6 +13,7 @@ def sort_item(item):
     return item[0]
 
 items.sort(key = sort_item)
+#items.sort(key=lamda item:item[1])
 print(items)
 
 # Problem - 1

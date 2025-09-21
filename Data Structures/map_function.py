@@ -18,3 +18,10 @@ Shopping_item = [
 ]
 price = list(map(lambda item : item[1] *1.1,Shopping_item))
 print(price)
+
+#Problem-2
+#Convert temperatures
+
+celcius = [10,2,3,4]
+fahrenheit = list(map(lambda c :  c * 9/5 + 32,celcius))
+print(fahrenheit)

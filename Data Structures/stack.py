@@ -22,6 +22,5 @@ def undo():
     print(f"Undo last word ({removed}) → Current text:", " ".join(Text_Editor))
 
 
-
 type_word("Hello")
 undo()

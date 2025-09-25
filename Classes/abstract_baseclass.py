@@ -1,7 +1,9 @@
+from abc import ABC,abstractmethod
+
 class InvalidOperationError(Exception):
     pass
 
-class Stram:
+class Stram(ABC):
     def __init__(self):
         self.opened = False
 
@@ -14,6 +16,9 @@ class Stram:
         if not self.opened:
             raise InvalidOperationError("Stream is already close")
         self.opened = True
+    @abstractmethod
+    def read(self):
+        pass
 
 class Filestream(Stram):
     def read(self):
@@ -23,5 +28,11 @@ class Filestream(Stram):
     def read(self):
         print("Reading data from file")
 
-stream = Stram()
+class MemoryStream(Stram):
+    def read(self):
+        print("Reading data from memory")
+
+stream = MemoryStream()
 stream.open()
+stream.read()
+stream.close()

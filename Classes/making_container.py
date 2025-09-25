@@ -6,6 +6,8 @@ class TagCloud:
     def add(self,tag):
         self.tags[tag] = self.tags.get(tag,0) + 1
 
+
+
      
 cloud = TagCloud()
 cloud.add("python")

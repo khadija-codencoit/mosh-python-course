@@ -7,3 +7,8 @@ print(random.choices([2,88,9,7,6],k=2))
 print("".join(random.choices("kjgfdsasdfg",k=2)))
 print("".join(random.choices(string.ascii_letters + string.digits,k=5)))
 print("".join(random.choices(string.ascii_letters + string.digits,k=9)))
+
+combain = string.ascii_uppercase + string.ascii_lowercase + string.digits + "(!@#$%^&*())"
+password = "".join(random.choices(combain , k=8))
+
+print("Generated Password:",password)
